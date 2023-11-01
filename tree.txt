@@ -1,0 +1,146 @@
+Folder PATH listing for volume T7
+Volume serial number is ACAD-59BB
+E:.
+|   LICENSE
+|   README.md
+|   infer_wild.py
+|   infer_wild_mesh.py
+|   requirements.txt
+|   train.py
+|   train_action.py
+|   train_action_1shot.py
+|   train_mesh.py
+|   BERT_pruning.py
+|   test.ipynb
+|   BERT_pruning_2.py
+|   BERT_quantization.py
+|   tree.txt
+|   
++---configs
+|   +---action
+|   |       MB_ft_NTU120_oneshot.yaml
+|   |       MB_ft_NTU60_xsub.yaml
+|   |       MB_ft_NTU60_xview.yaml
+|   |       MB_train_NTU120_oneshot.yaml
+|   |       MB_train_NTU60_xsub.yaml
+|   |       MB_train_NTU60_xview.yaml
+|   |       
+|   +---mesh
+|   |       MB_ft_h36m.yaml
+|   |       MB_ft_pw3d.yaml
+|   |       MB_train_h36m.yaml
+|   |       MB_train_pw3d.yaml
+|   |       
+|   +---pose3d
+|   |       MB_ft_h36m.yaml
+|   |       MB_ft_h36m_global.yaml
+|   |       MB_ft_h36m_global_lite.yaml
+|   |       MB_train_h36m.yaml
+|   |       MB_ft_h36m_pruning_test.yaml
+|   |       MB_ft_h36m_quantization_test.yaml
+|   |       
+|   \---pretrain
+|           MB_lite.yaml
+|           MB_pretrain.yaml
+|           
++---docs
+|       action.md
+|       inference.md
+|       mesh.md
+|       pose3d.md
+|       pretrain.md
+|       
++---lib
+|   +---data
+|   |   |   augmentation.py
+|   |   |   datareader_h36m.py
+|   |   |   datareader_mesh.py
+|   |   |   dataset_action.py
+|   |   |   dataset_mesh.py
+|   |   |   dataset_motion_2d.py
+|   |   |   dataset_motion_3d.py
+|   |   |   dataset_wild.py
+|   |   |   
+|   |   \---__pycache__
+|   |           dataset_motion_2d.cpython-37.pyc
+|   |           dataset_motion_3d.cpython-37.pyc
+|   |           augmentation.cpython-37.pyc
+|   |           datareader_h36m.cpython-37.pyc
+|   |           
+|   +---model
+|   |   |   DSTformer.py
+|   |   |   drop.py
+|   |   |   loss.py
+|   |   |   loss_mesh.py
+|   |   |   loss_supcon.py
+|   |   |   model_action.py
+|   |   |   model_mesh.py
+|   |   |   
+|   |   \---__pycache__
+|   |           DSTformer.cpython-37.pyc
+|   |           drop.cpython-37.pyc
+|   |           loss.cpython-37.pyc
+|   |           
+|   \---utils
+|       |   learning.py
+|       |   tools.py
+|       |   utils_data.py
+|       |   utils_mesh.py
+|       |   utils_smpl.py
+|       |   vismo.py
+|       |   
+|       \---__pycache__
+|               tools.cpython-37.pyc
+|               learning.cpython-37.pyc
+|               utils_data.cpython-37.pyc
+|               
++---params
+|       d2c_params.pkl
+|       synthetic_noise.pth
+|       
++---tools
+|       compress_amass.py
+|       convert_amass.py
+|       convert_h36m.py
+|       convert_insta.py
+|       preprocess_amass.py
+|       
++---data
+|   +---motion2d
+|   \---motion3d
+|       |   h36m_sh_conf_cam_source_final.pkl.zip
+|       |   h36m_sh_conf_cam_source_final.pkl
+|       |   
+|       \---MB3D_f243s81
+|           \---H36M-SH
+|               +---train
+|               |       00000000.pkl
+|               |       ~
+|               |       00017747.pkl
+|               |       
+|               \---test
+|                       00000000.pkl
+|                       ~
+|                       00002227.pkl
+|                       
++---checkpoint
+|   |   best_epoch.bin
+|   |   
+|   \---logs
+|           
++---model_pruning
+|   |   drop.py
+|   |   DSTformer.py
+|   |   loss_mesh.py
+|   |   loss_supcon.py
+|   |   loss.py
+|   |   model_action.py
+|   |   model_mesh.py
+|   |   
+|   \---__pycache__
+|           DSTformer.cpython-37.pyc
+|           loss.cpython-37.pyc
+|           drop.cpython-37.pyc
+|           
++---model_quantization
+\---.ipynb_checkpoints
